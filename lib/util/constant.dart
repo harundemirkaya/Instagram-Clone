@@ -1,6 +1,6 @@
+const String profile =
+    "https://instagram.fist6-1.fna.fbcdn.net/v/t51.2885-19/241808631_943149426551133_2818627992108566590_n.jpg?stp=dst-jpg_s320x320&_nc_ht=instagram.fist6-1.fna.fbcdn.net&_nc_cat=109&_nc_ohc=u4sG-KbWPBMAX-KKd_w&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AT-MAT9DGg75h-Boqqe_dOUwD8COoSIxP24PeKqFXnFd_g&oe=6312B720&_nc_sid=8fd12b";
+const String username = "suvogram";
 
-const String profile = "https://images.unsplash.com/photo-1529665253569-6d01c0eaf7b6?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZmlsZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60";
-const String username = "sathyamony";
-
-const String instagramName = "Sela Monysathya";
-const String instagramBio = "I ᗩᗰ ᑎOT ᑭEᖇᖴEᑕT ᗷᑌT \nI ᗩᗰ ᒪIᗰITEᗪ EᗪITIOᑎ. \nᗰOOᑎᑕᕼIᒪᗪ 🌙";
+const String instagramName = "Harun Demirkaya";
+const String instagramBio = "Mobile App Developer";

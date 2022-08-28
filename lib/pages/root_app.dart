@@ -8,6 +8,7 @@ import 'package:instaclone/pages/search_page.dart';
 import 'package:instaclone/theme/colors.dart';
 import 'package:instaclone/util/bottom_navigation_bar_json.dart';
 
+// ignore_for_file: prefer_const_constructors
 class RootApp extends StatefulWidget {
   const RootApp({Key? key}) : super(key: key);
 
@@ -28,7 +29,7 @@ class _RootAppState extends State<RootApp> {
   Widget getBody() {
     return IndexedStack(
       index: indexPage,
-      children: [
+      children: const [
         HomePage(),
         SearchPage(),
         NewPostPage(),

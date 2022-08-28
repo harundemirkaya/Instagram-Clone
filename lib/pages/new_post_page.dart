@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
+// ignore_for_file: prefer_const_constructors
 class NewPostPage extends StatefulWidget {
   const NewPostPage({Key? key}) : super(key: key);
 
