@@ -45,9 +45,11 @@ class _HomePageState extends State<HomePage> {
   Widget getBody() {
     return ListView(
       children: [
-        Row(
-          children: [
-            Padding(
+        SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          child: Row(
+              children: List.generate(stories.length, (index) {
+            return Padding(
               padding: EdgeInsets.all(3.0),
               child: Container(
                 width: 80,
@@ -69,16 +71,54 @@ class _HomePageState extends State<HomePage> {
                             decoration: BoxDecoration(
                               shape: BoxShape.circle,
                               border: Border.all(width: 2, color: bgWhite),
+                              image: DecorationImage(
+                                image: NetworkImage(
+                                  stories[index]['imageUrl'] as String,
+                                ),
+                                fit: BoxFit.cover,
+                              ),
                             ),
                           ),
                         ),
-                      )
+                      ),
+                      stories[index]['isAdd'] == true
+                          ? Positioned(
+                              right: 5,
+                              bottom: 0,
+                              child: Container(
+                                height: 20,
+                                width: 20,
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  color: primary,
+                                ),
+                                child: Center(
+                                  child: Icon(
+                                    Icons.add,
+                                    color: bgWhite,
+                                    size: 20,
+                                  ),
+                                ),
+                              ),
+                            )
+                          : SizedBox(),
                     ],
-                  )
+                  ),
+                  SizedBox(
+                    height: MediaQuery.of(context).size.height / 90,
+                  ),
+                  Text(
+                    stories[index]['username'] as String,
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    style: TextStyle(
+                      fontSize: 12,
+                    ),
+                  ),
                 ]),
               ),
-            )
-          ],
+            );
+          })),
         )
       ],
     );
