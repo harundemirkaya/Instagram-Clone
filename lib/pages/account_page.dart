@@ -74,7 +74,7 @@ class _AccountPageState extends State<AccountPage> {
             children: [
               Row(
                 children: [
-                  Container(
+                  SizedBox(
                     width: (size.width - 20) * 0.3,
                     child: Stack(
                       children: [
@@ -115,13 +115,13 @@ class _AccountPageState extends State<AccountPage> {
                       ],
                     ),
                   ),
-                  Container(
+                  SizedBox(
                     width: (size.width - 20) * 0.7,
                     child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           Column(
-                            children: [
+                            children: const [
                               Text(
                                 "10",
                                 style: TextStyle(
@@ -137,7 +137,7 @@ class _AccountPageState extends State<AccountPage> {
                             ],
                           ),
                           Column(
-                            children: [
+                            children: const [
                               Text(
                                 "331",
                                 style: TextStyle(
@@ -153,7 +153,7 @@ class _AccountPageState extends State<AccountPage> {
                             ],
                           ),
                           Column(
-                            children: [
+                            children: const [
                               Text(
                                 "345",
                                 style: TextStyle(
@@ -202,7 +202,7 @@ class _AccountPageState extends State<AccountPage> {
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
+                children: const [
                   Text(
                     "Story Highlights",
                     style: TextStyle(
@@ -228,7 +228,7 @@ class _AccountPageState extends State<AccountPage> {
         Padding(
           padding: EdgeInsets.symmetric(vertical: 3),
           child: Row(children: [
-            Container(
+            SizedBox(
               width: (size.width * 0.5),
               child: IconButton(
                 splashRadius: 20,
@@ -243,7 +243,7 @@ class _AccountPageState extends State<AccountPage> {
                 },
               ),
             ),
-            Container(
+            SizedBox(
               width: (size.width * 0.5),
               child: IconButton(
                 splashRadius: 20,
