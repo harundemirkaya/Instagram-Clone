@@ -1,6 +1,6 @@
 # Instagram Clone
 
-A new Flutter project.
+![alt text](https://softetik.com/git/instadesc.png)
 
 ## Getting Started
 
